@@ -1,8 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+// Include the Main React Dependencies
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+//CSS 
+//import './css/style.css';
+
+// Grabs the Routes
+import routes from "./config/routes";
+
+// Renders the contents according to the route page
+// Displays the contents in the div app of index.html
+ReactDOM.render(routes, document.getElementById("root"));
+
